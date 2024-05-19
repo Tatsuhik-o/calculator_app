@@ -1,0 +1,100 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+}
+@font-face {
+    font-family: "Calculator";
+    src: url(../public/font/calculator.ttf) format("truetype");
+}
+body{
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    background-color: #dff9fb;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.calc{
+    width: 500px;
+    height: 750px;
+    border: 2px solid #c7ecee;
+    background-color: #FFFFFF;
+    border-radius: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.realCalc{
+    height: 90%;
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+
+}
+.realCalc > *{
+    width: 100%;
+    height: 15%;
+}
+.screen{
+    padding-right: 25px;
+    background-color: #2388FF;
+    border: 2px solid #c7ecee;
+    border-radius: 25px;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    font-size: 4.5rem;
+    font-weight: bolder;
+    font-family: 'Calculator', Tahoma, Geneva, Verdana, sans-serif;
+    overflow: hidden;
+}
+.portion{
+    display: flex;
+    justify-content: space-between;
+}
+.portion > *{
+    width: 22%;
+    font-size: 3rem;
+    font-weight: bolder;
+    font-family: 'Calculator', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 100%;
+    box-shadow: 1px 1px 1px 1px #dff9fb;
+    text-align: center;
+    background-color: black;
+    color: white;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+}
+.portion > *:active{
+    transform: scale(0.9);
+}
+.number{
+    background-color:#D8DDF0;
+    color: #6E7691;
+}
+.notOp{
+    background-color: #F4F6FF;
+    color: #6D7691;
+}
+.plus{
+    background-color: #63DE77;
+}
+.multiply{
+    background-color: #FFC804;
+}
+.divide{
+    background-color: #2388FF;
+}
+.minus{
+    background-color: #FF445A;
+}
+.clear{
+    background-color: #1F2B54;
+}
